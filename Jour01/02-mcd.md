@@ -16,7 +16,7 @@ Schéma ==> Cahier des charges : présente les tables des projets
 ## Exo :
 Créer table recettes :
                     - Titre : Texte / 0-255  ==> Varchar (255 lettres)
-                    - Description : Texte / 0-65000  ==> Texte (65000 lettres)
+                    - Description : Texte / 0-65000  ==> Text (65000 lettres)
                     - Date publication :
                                     - Date : AAAA-MM-JJ  ==> Date
                                     - DateTime : AAAA-MM-JJ HH:MM:SS  ==> DateTime
