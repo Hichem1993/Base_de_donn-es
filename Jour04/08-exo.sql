@@ -1,5 +1,5 @@
 -- PARTIE 1 :
-
+DROP TABLE if EXISTS batiment;
 CREATE TABLE IF NOT EXISTS batiment (
     batiment_id INTEGER PRIMARY KEY AUTOINCREMENT,
     nom VARCHAR(255),
@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS batiment (
     ville VARCHAR(255) NOT NULL
 );
 
+DROP TABLE if EXISTS salle;
 CREATE TABLE IF NOT EXISTS salle (
     salle_id INTEGER PRIMARY KEY AUTOINCREMENT,
     nom VARCHAR(255),
@@ -30,11 +31,11 @@ INSERT INTO batiment (nom , rue , code_postal , ville) VALUES
 
 
 INSERT INTO salle (nom , capacite , description , url_img , dt_creation , id_batiment) VALUES
-('Rouge' , 20 , 'salle avec Vidéo Projecteur' , 'img.jpg' , 'le 1er février 2024', 1),
-('Bleue' , 10 , 'salle avec bureau' , 'img.jpg' , 'le 1er mars 2024', 1),
-('Rose' , 50 , 'salle' , 'img.jpg' , 'le 1er octobre 2024', 2),
-('Mauve' , 100 , 'auditorium' , 'img.jpg' , 'le 1er octobre 2010', 2),
-('Jaune' , 15 , 'salle de réunion' , 'img.jpg' , 'le 1er janvier 2025', 2);
+('Rouge' , 20 , 'salle avec Vidéo Projecteur' , 'img.jpg' , '2024-02-01', 1),
+('Bleue' , 10 , 'salle avec bureau' , 'img.jpg' , '2024-03-01', 1),
+('Rose' , 50 , 'salle' , 'img.jpg' , '2024-10-01', 2),
+('Mauve' , 100 , 'auditorium' , 'img.jpg' , '2010-10-01', 2),
+('Jaune' , 15 , 'salle de réunion' , 'img.jpg' , '2025-01-01', 2);
 
 
 
